@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* código de figuras */
+
+.article1 {
+    display: grid;
+    place-content: center;
+}
+.article1 form{
+    display: grid;
+    place-content: center;
+}
