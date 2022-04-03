@@ -9,10 +9,9 @@
 </head>
 <body>
     <header>
-        <h1>Figuras Geométricas</h1>
-        <p>Primer taller del curso practico de html</p>
+        <h1>Math Bohr </h1>
     </header>
-    <section>
+    <section class="figure-articles">
        <article class="article1">
         <h2>Calcula el área y perimetro de un cuadrado</h2>
         <form action="">
@@ -21,9 +20,34 @@
             </label>
             <input id="InputCuadrado" type="number">
             <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
-            <button type="button" onclick="calcularAreaCuadrado">Calcular área</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+            <output name="result" id="OutputCuadrado"></output>
         </form>
        </article>
+
+       <article class="article1">
+        <h2>Calcula el área y perimetro de un Triangulo</h2>
+        <form action="">
+            <label for="InputTrianguloSideA" >Escribe cuanto mide el lado A:</label>
+            <input id="InputTrianguloSideA" type="number">
+            
+            <label for="InputTrianguloSideB" >Escribe cuanto mide el lado B:</label>
+            <input id="InputTrianguloSideB" type="number">
+           
+            <label for="InputTrianguloBase">Escribe cuanto mide la base:</label>
+            <input id="InputTrianguloBase" type="number">
+
+            <label for="InputTrianguloAltura">Escribe cuanto mide la Altura:</label>
+            <input id="InputTrianguloAltura" type="number">
+            
+            <button type="button" onclick="calcularPerimetroTriangulo()" >Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()" >Calcular área</button>
+            <p id="resultTriangulo"></p>
+
+        </form>
+       </article>
+
+      
     </section>
 
     <script src="./figuras.js"></script>

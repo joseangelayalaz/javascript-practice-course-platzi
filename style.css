@@ -4,12 +4,13 @@
 }
 
 /* código de figuras */
-
-.article1 {
-    display: grid;
-    place-content: center;
+header {
+    background-color: antiquewhite;
 }
-.article1 form{
+
+
+.figure-articles {
     display: grid;
+    grid-template-columns: 250px 250px 250px;
     place-content: center;
 }
