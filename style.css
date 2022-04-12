@@ -1,16 +1,98 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 /* código de figuras */
+
 header {
-    background-color: antiquewhite;
+    min-width: 900px;
+    height: 70px;
+    background-color: hsl(165deg 100% 47%);
+    display: grid;
+    grid-template-columns: 150px 400px;
+}
+header img{
+    width: 60px;
+    object-fit: contain;
+    margin: 4.5px 0 0 50px;
+}
+
+.img-circle--top,
+.img-triangulo--top,
+.img-square--top {
+    display: grid;
+    grid-template-columns: 50px 100px;
+    gap: 13px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+}
+
+header p {
+    vertical-align: middle;
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: white;
 }
 
 
 .figure-articles {
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: repeat(3, 350px);
     place-content: center;
+    gap: 50px;
+    justify-items: center;
+}
+
+.article3,
+.article2,
+.article1 {
+    margin-top: 50px;
+    border-radius: 10px;
+    height: auto;
+    
+}
+
+.form-circle .circleimg,
+.form-triangulo .trianguloimg,
+.formCuadrado .cuadradoimg {
+    object-fit: contain;
+    width: 60px;
+    height: auto;
+}
+
+.form-circle,
+.form-triangulo,
+.formCuadrado {
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    width: 350px;
+    background-color: hsl(165deg 100% 47%);
+    border-radius: 10px;
+}
+
+.buttontriangulo,
+.buttoncuadrado {
+    margin-bottom: 15px;
+}
+
+.borderresult {
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.formCuadrado button {
+    width: 70px;
+    height: auto;
+    background-color: rgb(250, 143, 11);
+    
 }

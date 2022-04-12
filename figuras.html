@@ -9,25 +9,34 @@
 </head>
 <body>
     <header>
-        <h1>Math Bohr </h1>
+        <img src="./assets/logo.png" alt="">
+        <p>Cool Math</p>
     </header>
     <section class="figure-articles">
        <article class="article1">
-        <h2>Calcula el área y perimetro de un cuadrado</h2>
-        <form action="">
+        <form action="" class="formCuadrado">
+            <div class="img-square--top">
+                <img  class="cuadradoimg" src="./assets/cuadrado.png" alt="">
+                <p>Square</p>
+            </div>
             <label for="InputCuadrado">
-                Escribe cuanto mide cada lado de tu cuadrado:
+                How long is each side of your square:
             </label>
             <input id="InputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
-            <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
-            <output name="result" id="OutputCuadrado"></output>
+           <div>
+            <button type="button" onclick="calcularPerimetroCuadrado()">Get Perimeter</button>
+            <button class="buttoncuadrado" type="button" onclick="calcularAreaCuadrado()">Get Área</button>
+           </div>
+            <p class="borderresult" id="ResultadoCuadrado">Result</p>
         </form>
        </article>
 
-       <article class="article1">
-        <h2>Calcula el área y perimetro de un Triangulo</h2>
-        <form action="">
+       <article class="article2">
+        <form action="" class="form-triangulo">
+            <div class="img-triangulo--top">
+                <img class="trianguloimg" src="./assets/triangulo.png" alt="">
+                <p>Triangulo</p>
+            </div>
             <label for="InputTrianguloSideA" >Escribe cuanto mide el lado A:</label>
             <input id="InputTrianguloSideA" type="number">
             
@@ -40,13 +49,31 @@
             <label for="InputTrianguloAltura">Escribe cuanto mide la Altura:</label>
             <input id="InputTrianguloAltura" type="number">
             
-            <button type="button" onclick="calcularPerimetroTriangulo()" >Calcular el perimetro</button>
-            <button type="button" onclick="calcularAreaTriangulo()" >Calcular área</button>
-            <p id="resultTriangulo"></p>
+           <div>
+            <button type="button" onclick="calcularPerimetroTriangulo()" >Get perimeter</button>
+            <button class="buttontriangulo" type="button" onclick="calcularAreaTriangulo()" >Get área</button>
+           </div>
+            <p class="borderresult" id="resultTriangulo">Result</p>
 
         </form>
        </article>
-
+       
+       <article class="article3">
+           <form class="form-circle" action="">
+               <div class="img-circle--top">
+                   <img class="circleimg" src="./assets/circulo.png" alt="">
+                   <p>Circle</p>
+               </div>
+               <label for="">Escribe cuanto mide el radio del circulo</label>
+               <input id="inputRadioCirculo" type="number">
+               
+               <div>
+                <button type="button" onclick="calcularAreaCirculo()">Get area</button>
+                <button type="button" onclick="calcularPerimetroCirculo()">Get perimeter</button> 
+               </div>
+               <p class="borderresult" id="resultCirculo">Result</p>
+           </form>
+       </article>
       
     </section>
 
