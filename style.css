@@ -10,7 +10,7 @@
 header {
     min-width: 900px;
     height: 70px;
-    background-color: hsl(165deg 100% 47%);
+    background-color: hsl(180deg 100% 40% / 76%);
     display: grid;
     grid-template-columns: 150px 400px;
 }
@@ -72,10 +72,11 @@ header p {
     display: grid;
     place-content: center;
     width: 350px;
-    background-color: hsl(165deg 100% 47%);
+    background-color:hsl(180deg 100% 40% / 76%);
     border-radius: 10px;
 }
 
+.button-circle,
 .buttontriangulo,
 .buttoncuadrado {
     margin-bottom: 15px;
@@ -90,9 +91,40 @@ header p {
     font-weight: bold;
 }
 
+.form-circle button,
+.form-triangulo button,
 .formCuadrado button {
-    width: 70px;
-    height: auto;
-    background-color: rgb(250, 143, 11);
+    background-color: hsl(180deg 100% 40% / 76%);
+    width: 150px;
+    height: 26px;
+    border-radius: 3px;
+    border: 2px solid rgb(243, 247, 246);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     
 }
+
+.form-circle label,
+.form-triangulo label,
+.formCuadrado label {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    line-height: 2.0rem;
+}
+
+.form-circle input,
+.form-triangulo input,
+.formCuadrado input {
+    height: 27px;
+    border-radius: 20px;
+    border: 2px solid  hsl(180deg 100% 40% / 76%);
+}
+
+
