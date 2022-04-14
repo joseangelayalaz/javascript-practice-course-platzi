@@ -76,6 +76,41 @@ header p {
     border-radius: 10px;
 }
 
+.square-draw {
+    background-color: hsl(180deg 100% 40% / 76%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+}
+
+.Triangle-draw {
+    width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid white;
+    border-left: 25px solid transparent;
+
+}
+
+.Triangle-draw-white {
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid hsl(180deg 100% 40% / 76%);
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: 136px;
+    left: 447px;
+}
+
+.circle-draw {
+    background-color: hsl(180deg 100% 40% / 76%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
 .button-circle,
 .buttontriangulo,
 .buttoncuadrado {
@@ -125,6 +160,7 @@ header p {
     height: 27px;
     border-radius: 20px;
     border: 2px solid  hsl(180deg 100% 40% / 76%);
+    text-align: center;
 }
 
 
