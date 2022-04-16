@@ -1,0 +1,8 @@
+.figure-articles {
+    min-width: 780px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 600px));
+    place-content: center;
+    gap: 50px;
+    justify-items: center;
+} 

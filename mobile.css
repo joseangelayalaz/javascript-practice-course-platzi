@@ -2,22 +2,22 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 /* código de figuras */
 
 header {
-    min-width: 900px;
-    height: 70px;
     background-color: hsl(180deg 100% 40% / 76%);
-    display: grid;
-    grid-template-columns: 150px 400px;
 }
 header img{
     width: 60px;
     object-fit: contain;
-    margin: 4.5px 0 0 50px;
+    margin: 0 10px 0 0;
+}
+
+.grid-header {
+    display: flex;
+    justify-content: center;
 }
 
 .img-circle--top,
@@ -34,24 +34,16 @@ header img{
 
 header p {
     vertical-align: middle;
-    font-size: 4.0rem;
+    font-size: 3.0rem;
     font-weight: bold;
     color: white;
 }
 
 
-.figure-articles {
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    place-content: center;
-    gap: 50px;
-    justify-items: center;
-}
-
 .article3,
 .article2,
 .article1 {
-    margin-top: 50px;
+    margin: 20px;
     border-radius: 10px;
     height: auto;
     
@@ -61,9 +53,9 @@ header p {
 .form-triangulo,
 .formCuadrado {
     padding: 10px;
+    width: 100%;
     display: grid;
     place-content: center;
-    width: 350px;
     background-color:hsl(180deg 100% 40% / 76%);
     border-radius: 10px;
 }
@@ -82,17 +74,6 @@ header p {
     border-bottom: 50px solid white;
     border-left: 25px solid transparent;
 
-}
-
-.Triangle-draw-white {
-    width: 0;
-    height: 0;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid hsl(180deg 100% 40% / 76%);
-    border-left: 20px solid transparent;
-    position: absolute;
-    top: 136px;
-    left: 447px;
 }
 
 .circle-draw {
@@ -122,7 +103,7 @@ header p {
 .form-triangulo button,
 .formCuadrado button {
     background-color: hsl(180deg 100% 40% / 76%);
-    width: 150px;
+    width: 100%;
     height: 26px;
     border-radius: 3px;
     border: 2px solid rgb(243, 247, 246);

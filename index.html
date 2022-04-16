@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" media="(min-width: 930px)" >
+    <link rel="stylesheet" href="./mobile.css">
     <title>Figuras geométrics | Curso practico de JS</title>
 </head>
 <body>
     <header>
+       <div class="grid-header"> 
         <img src="./assets/logo.png" alt="">
         <p>Cool Math</p>
+       </div>
     </header>
     <section class="figure-articles">
        <article class="article1">
@@ -52,7 +55,6 @@
            <div>
             <button type="button" onclick="calcularPerimetroTriangulo()" >Get perimeter</button>
             <button class="buttontriangulo" type="button" onclick="calcularAreaTriangulo()" >Get área</button>
-            <button class="buttontriangulo" type="button" onclick="calcularAlturaTriangulo()">Get hieght</button>
            </div>
             <p class="borderresult" id="resultTriangulo">Result</p>
 
