@@ -79,7 +79,37 @@
        </article>
       
     </section>
+    <section class="price_discounts"> 
+       <article>
+        <form class="form-price" action="">
+            <h1>Price / Discounts</h1>
+            <label for="">Price of your product $</label>
+            <input type="number" id="InputPrice">
+            <label for="InputDiscount">Discount of your product %</label>
+            <input type="number" id="InputDiscount">
+            <label for="InputCupon">Cupon of product</label>
+           <input type="text" id="InputCupon">
+            <button type="button" onclick="calculatePriceAndDiscount()">Get discount price</button>
+            
+            <p class="borderresult" id="resultDiscount">Result</p>
+        </form>
+       </article>
+        <article>
+            <form action="" class="form-price">
+                <p>Lista de cupones:</p>
+                <ol>
+                    <li>Beast</li>
+                    <li>BeastMan</li>
+                    <li>IronBeast</li>
+                    <li>HeroBeast</li>
+                    <li>DarkBeast</li>
+                </ol>
+            </form>
+        </article>
+    </section>
 
     <script src="./figuras.js"></script>
+    <script src="./discounts.js"></script>
 </body>
-</html>
+</html> 
+

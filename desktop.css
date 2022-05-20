@@ -6,3 +6,11 @@
     gap: 50px;
     justify-items: center;
 } 
+
+.price_discounts {
+    min-width: 780px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 50px;
+    place-content: center;
+}
