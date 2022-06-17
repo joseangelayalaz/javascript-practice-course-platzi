@@ -144,6 +144,7 @@ header p {
     height: auto;
     
 }
+.form-mediana,
 .form-price {
     display: grid;
     place-content: center;
@@ -158,16 +159,19 @@ header p {
     border-radius: 10px;
     line-height: 35px;
 }
+.form-mediana h1,
 .form-price h1 {
     font-size: 1.7rem;
     text-align: center;
 }
+.form-mediana input,
 .form-price input {
     height: 27px;
     border-radius: 20px;
     border: 2px solid hsl(180deg 100% 40% / 76%);
     text-align: center;
 }
+.form-mediana button,
 .form-price button {
     background-color: hsl(180deg 100% 40% / 76%);
     width: 100%;
@@ -182,5 +186,7 @@ header p {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
-
+.form-mediana button:hover {
+    color: rgba(0, 88, 204, 0.76);
+}
 
